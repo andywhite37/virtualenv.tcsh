@@ -12,7 +12,7 @@
 # Deactivate any previous virtualenv
 ###############################################################################
 
-source ~/bin/deactivate.csh
+source ~/bin/deactivate.tcsh
 
 ###############################################################################
 # Set VIRTUAL_ENV
@@ -36,18 +36,17 @@ else
 endif
 
 ###############################################################################
-# Set new PYTHONPATH
+# Set virtual PYTHONPATH
 ###############################################################################
 
 if ( $?PYTHONPATH ) then
     setenv _OLD_VIRTUAL_PYTHONPATH $PYTHONPATH
 endif
 
-#setenv PYTHONPATH "${VIRTUAL_ENV}:${VIRTUAL_ENV}/project/apps:${VIRTUAL_ENV}/apps"
 setenv PYTHONPATH "${VIRTUAL_ENV}"
 
 ###############################################################################
-# Set new PATH
+# Set virtual PATH
 ###############################################################################
 
 setenv _OLD_VIRTUAL_PATH "$PATH"

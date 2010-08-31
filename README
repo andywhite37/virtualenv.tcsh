@@ -1,18 +1,14 @@
-Python virtualenv activation and deactivation scripts for tcsh.
+-------------------------------------------------------------------------------
+Python virtualenv activation and deactivation scripts for tcsh
+-------------------------------------------------------------------------------
+
+By default, these scripts assume that they have been be copied into ~/bin/,
+but this can be customized if necessary.
 
 Note: these scripts do not mess with the prompt.  Scripts assume that the prompt is properly
 handled in the .tcshrc file (using VIRTUAL_ENV environment variable).
 
-Here is an example for showing the VIRTUAL_ENV in the prompt:
-
-## 30 - black
-## 31 - brick red
-## 32 - green
-## 33 - yellow ochre
-## 34 - dark blue
-## 35 - magenta
-## 36 - cyan
-## 37 - white/gray
+Here is an example for setting up the prompt to show the current VIRTUAL_ENV:
 
 set black     = '%{\033[30m%}'
 set red       = '%{\033[31m%}'

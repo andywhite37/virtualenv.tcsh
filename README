@@ -5,6 +5,20 @@ Python virtualenv activation and deactivation scripts for tcsh
 By default, these scripts assume that they have been be copied into ~/bin/,
 but this can be customized if necessary.
 
+To run these scripts, navigate to your virtualenv root directory, and run:
+
+source ~/bin/activate.tcsh
+
+or:
+
+source ~/bin/deactivate.tcsh
+
+You can alternatively run:
+
+source ~/bin/activate.tcsh /path/to/virtualenv/root
+
+to activate a virtualenv from anywhere.
+
 Note: these scripts do not mess with the prompt.  Scripts assume that the prompt is properly
 handled in the .tcshrc file (using VIRTUAL_ENV environment variable).
 

@@ -1,4 +1,4 @@
-﻿###############################################################################
+###############################################################################
 # virtualenv deactivate.csh scripts
 #
 # Run this script by: "source /path/to/deactivate.csh"
@@ -37,7 +37,6 @@ endif
 if ( "$?_OLD_VIRTUAL_PYTHONHOME" ) then
     setenv PYTHONHOME "$_OLD_VIRTUAL_PYTHONHOME"
     unsetenv _OLD_VIRTUAL_PYTHONHOME
-    #echo "Restored PYTHONHOME to: $PYTHONHOME"
 endif
 
 ###############################################################################
